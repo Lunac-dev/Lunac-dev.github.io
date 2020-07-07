@@ -1,0 +1,30 @@
+
+
+.flex-item {
+    display: flex;
+    align-items: center;
+    padding: 100px;
+}
+.flex-item img{
+    flex-grow:0;
+    flex-shrink:0;
+}
+h1.ariel {
+    font-family: Arial, Helvetica, sans-serif;
+}
+div.ariel {
+    font-family: Arial, Helvetica, sans-serif;
+}
+body {
+    background-color: snow
+}
+.alert {
+    margin: 10px;
+}
+.commands {
+    display: flex;
+    padding: 100px;
+}
+.table {
+    margin: 30px;
+}
