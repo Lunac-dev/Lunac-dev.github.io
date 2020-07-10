@@ -102,3 +102,15 @@ body {
 		opacity: 0;
 	}
 }
+.skill {
+    background-color: snow;
+    border-radius: 30px;
+    margin: 10px;
+    font-weight: bold;
+    border: solid 3px linear-gradient(206deg, #21D4FD 0%, BLUE 100%);
+    display: flex;
+}
+.skill-text {
+    font-family: sans-serif;
+    padding: 10px;
+}
