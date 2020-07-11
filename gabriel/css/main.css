@@ -13,8 +13,8 @@
     -webkit-filter: drop-shadow(0 0 10px rgba(255,255,255, .5));
 }
 body {
-    background: rgb(246,80,153);
-    background: linear-gradient(90deg, rgba(246,80,153,0.9360119047619048) 0%, rgba(250,40,111,0.938813025210084) 52%, rgba(254,2,28,1) 100%);
+    background: rgb(222,56,74);
+    background: linear-gradient(90deg, rgba(222,56,74,1) 0%, rgba(222,56,74,1) 100%);
 }
 .alert {
     margin: 10px;
