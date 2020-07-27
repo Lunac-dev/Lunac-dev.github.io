@@ -1,12 +1,19 @@
 body {
+/*
     background-color: #21D4FD;
     background-image: linear-gradient(206deg, #21D4FD 0%, #B721FF 100%);
+*/
+    background-image: url("https://cdn.discordapp.com/attachments/728834175398051900/737303838486167602/wave.svg");
+    /*background-attachment: fixed;*/
+    background-size: cover;
+    background-position: center;
 }
+
 
 .title {
     text-align: center;
     padding: 40px;
-    color: snow;
+    color: #0099ff;
 }
 
 #title { 
@@ -19,7 +26,7 @@ body {
   display: block;
   width: 0;
   transition: width 0.3s;
-  border-bottom: 3px solid white;
+  border-bottom: 3px solid #0099ff;
 }
 
 #title:hover::after {
@@ -111,6 +118,5 @@ body {
     display: flex;
 }
 .skill-text {
-    font-family: sans-serif;
     padding: 10px;
 }
