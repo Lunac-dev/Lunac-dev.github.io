@@ -17,11 +17,6 @@ html {
     padding: 30px;
     -webkit-filter: drop-shadow(0 0 10px rgba(255,255,255, .5));
 }
-body {
-    background: rgb(222,56,74);
-    background: linear-gradient(90deg, rgba(222,56,74,1) 0%, rgba(222,56,74,1) 100%);
-    margin: auto;
-}
 .commands {
     display: flex;
     padding: 100px;
@@ -34,13 +29,24 @@ body {
     border-radius: 20px;
     margin: 10px;
     font-weight: bold;
-    display: flex;
+    text-align: center;
+    border: 3px solid rgb(222,56,74);
+    width: 300px;
 }
 .loaded {
   opacity: 0;
   visibility: hidden;
 }
-
+footer {
+    opacity: 0.5;
+    background-color: white;
+    font-size: 15px;
+    width:100%;
+    color: rgb(222,56,74);
+    text-align:center;
+    position:fixed;
+    bottom: 0;
+}
 /* ローディング画面 */
 #loading {
   width: 100vw;
