@@ -1,9 +1,14 @@
-
-
+html {
+  box-sizing: border-box;
+}
+*,*::before,*::after {
+  box-sizing: inherit;
+}
 .flex-item {
     display: flex;
     align-items: center;
     padding: 100px;
+    background: rgb(222,56,74);
 }
 .flex-item img{
     flex-grow:0;
@@ -15,9 +20,7 @@
 body {
     background: rgb(222,56,74);
     background: linear-gradient(90deg, rgba(222,56,74,1) 0%, rgba(222,56,74,1) 100%);
-}
-.alert {
-    margin: 10px;
+    margin: auto;
 }
 .commands {
     display: flex;
@@ -31,7 +34,6 @@ body {
     border-radius: 20px;
     margin: 10px;
     font-weight: bold;
-    border: solid 3px linear-gradient(206deg, #21D4FD 0%, BLUE 100%);
     display: flex;
 }
 .loaded {

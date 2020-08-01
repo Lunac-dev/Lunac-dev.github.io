@@ -1,12 +1,9 @@
 body {
 /*
-    background-color: #21D4FD;
-    background-image: linear-gradient(206deg, #21D4FD 0%, #B721FF 100%);
-*/
     background-image: url("https://cdn.discordapp.com/attachments/728834175398051900/737303838486167602/wave.svg");
-    /*background-attachment: fixed;*/
     background-size: cover;
     background-position: center;
+*/
 }
 
 
@@ -14,6 +11,16 @@ body {
     text-align: center;
     padding: 40px;
     color: #0099ff;
+}
+
+#skill {
+    background-image: url("https://cdn.discordapp.com/attachments/728834175398051900/737303838486167602/wave.svg");
+    background-size: cover;
+}
+
+#work {
+    background-image: url("https://cdn.discordapp.com/attachments/711968635970912316/739160267547607170/wave.svg");
+    background-size: cover;
 }
 
 #title { 
@@ -71,7 +78,7 @@ body {
 	width: 50px;
 	height: 3px;
 	content: '';
-	background: white;
+	background: #0099ff;
 }
 .cp_arrows .cp_arrow:before {
 	-webkit-transform: rotate(30deg) translateX(-39%);
@@ -109,14 +116,26 @@ body {
 		opacity: 0;
 	}
 }
-.skill {
-    background-color: snow;
-    border-radius: 30px;
-    margin: 10px;
-    font-weight: bold;
-    border: solid 3px linear-gradient(206deg, #21D4FD 0%, BLUE 100%);
+.skill-cont {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
-.skill-text {
+.skill {
+    background-color: white;
+    margin: 30px;
+    border-radius: 10px;
+    text-align: center;
     padding: 10px;
+    border: 3px solid #0099ff;
+}
+footer {
+    opacity: 0.5;
+    background-color: white;
+    font-size: 15px;
+    width:100%;
+    color: #0099ff;
+    text-align:center;
+    position:fixed;
+    bottom: 0;
 }
