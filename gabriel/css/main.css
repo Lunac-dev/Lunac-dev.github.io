@@ -52,7 +52,7 @@ footer {
   width: 100vw;
   height: 100vh;
   transition: all 1s;
-  background-color: black;
+  background-color: gray;
   position: fixed;
   top: 0;
   left: 0;
