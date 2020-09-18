@@ -8,34 +8,98 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/7d0daff94e.js" crossorigin="anonymous"></script>
     <script type="text/javascript" src="js/js.js"></script>
-    <title>About Lunac</title>
+    <title>I am Lunac! | home</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    <link id="theme-style" rel="stylesheet" href="css/main2.css">
+    <link id="theme-style" rel="stylesheet" href="css/main.css">
     <link href="https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@300&display=swap" rel="stylesheet">
 </head>
 
-<body>
-<div class="profile-card">
-    <div class="card-header">
-        <div class="icon">
-        <img src="images/icon.jpg">
+<body style="font-family: 'M PLUS 1p', sans-serif;">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" style="background-color: aquamarine;">
+        <a class="navbar-brand" href="#">Hey! I am Lunac!</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
+                <a class="nav-item nav-link" href="gabriel">Gabriel!</a>
+                <a class="nav-item nav-link" href="#skill">Skill</a>
+                <a class="nav-item nav-link" href="#projects">Projects</a>
+            </div>
         </div>
-        <div class="name">
-            Lunac
-        </div>
-        <div class="desc">
-            Spiogt plugin / html / css / java / php(studying)
-            <br>
-            <a href="https://www.rezxis.net/">Rezxis Network</a> - <a href="https://drager.lunacc.cf/">Dragermc</a> - <a href="https://lunac-dev.netlify.app/gabriel/">Gabriel!</a>
-        </div>
-        <div class="link">
-            <a href="https://twitter.com/lunac_dev" class="fab fa-twitter"></a>
-            <a href="" class="fab fa-discord"></a>
-            <a href="https://www.spigotmc.org/members/lunac.1028920/" class="fas fa-faucet"></a>
-            <a href="https://github.com/lunac-dev" class="fab fa-github"></a>
+    </nav>
+    <div class="title">
+        <h2 style="font-size: 80px;">Hey! I am </h2>
+        <h1 id ="title" style="font-size: 150px;">Lunac!</h1>
+        <div style="display: flex; flex-wrap: wrap; justify-content: center;">
+            <h5 style="padding:  20px;"><a href="https://twitter.com/lunac_dev"><i class="fab fa-twitter fa-3x"></i></a></h5>
+            <h5 style="padding:  20px;"><a href="https://discord.gg/veCPYGw"><i class="fab fa-discord fa-3x"></i></a></h5>
+            <h5 style="padding:  20px;"><a href="https://github.com/lunac-dev"><i class="fab fa-github fa-3x"></i></a></h5>
+            <h5 style="padding:  20px;"><a href="https://www.spigotmc.org/members/lunac.1028920/"><i class="fas fa-faucet fa-3x"></i></a></h5>
         </div>
     </div>
-</div>
+    <div class="cp_arrows">
+	<div class="cp_arrow cp_arrowfirst"></div>
+	<div class="cp_arrow cp_arrowsecond"></div>
+    </div>
+    <div id="skill">
+        <a name="skill"></a><h1 style="color: white; font-size: 100px; text-align: center; -webkit-text-stroke: 1px #0099ff;
+  text-stroke: 1px #0099ff;">[ SKILL ]</h1>
+        <div class="skill-cont">
+            <div class="skill">
+                <h1><i class="fab fa-css3-alt fa-6x" style="color: #0099ff;"></i></h1>
+                <h4>CSS3</h4>
+            </div>
+            <div class="skill">
+                <h1><i class="fab fa-html5 fa-6x" style="color: #0099ff;"></i></h1>
+                <h4>HTML5</h4>
+            </div>
+            <div class="skill">
+                <h1><i class="fab fa-java fa-6x" style="color: #0099ff;"></i></h1>
+                <h4>JAVA</h4>
+            </div>
+            <div class="skill">
+                <h1><i class="fas fa-file-alt fa-6x" style="color: #0099ff;"></i></h1>
+                <h4>SKRIPT</h4>
+            </div>
+            <div class="skill">
+                <h1><i class="fab fa-php fa-6x" style="color: #0099ff;"></i></h1>
+                <h4>PHP(Studying)</h4>
+            </div>
+        </div>
+    </div>
+    <div id="work">
+        <a name="projects"></a><h1 style="color: white; font-size: 100px; text-align: center; -webkit-text-stroke: 1px #0099ff;
+  text-stroke: 1px #0099ff; background-color: #0099ff">[ PROJECTS ]</h1>
+        <div class="skill-cont">
+            <div class="skill">
+                <h1><img src="images/rezxis.png" style="width: 200px;"></h1>
+                <h4>REZXIS NETWORK</h4>
+                <a href="https://www.rezxis.net/" target="_blank">Check</a>
+            </div>
+            <div class="skill">
+                <h1><img src="images/Gabriel.png" style="width: 200px;"></h1>
+                <h4>GABRIEL! DISCORD BOT</h4>
+                <a href="gabriel/" target="_blank">Check</a>
+            </div>
+            <div class="skill">
+                <h1><img src="images/Drager.png" style="width: 200px; border-radius: 50px;"></h1>
+                <h4>DRAGERMC</h4>
+                <a href="#" target="_blank">Check</a>
+            </div>
+        </div>
+    </div>
+    <a name="spigot-plugins"></a><h1 style="color: white; font-size: 100px; text-align: center; -webkit-text-stroke: 1px #0099ff;
+  text-stroke: 1px #0099ff; background-color: #0099ff">[ SPIGOT PLUGINS ]</h1>
+    <div class="skill-cont">
+        <div class="skill">
+            <h1><img src="https://www.spigotmc.org/data/resource_icons/81/81666.jpg?1595130462" style="width: 200px; border-radius: 50px;"></h1>
+            <h4>JNEWS BAR</h4>
+            <h5>ボスバーに日本のニュースを定期的に表示する。</h5>
+            <a href="https://www.spigotmc.org/resources/jnewsbar.81666/" target="_blank">Check</a>
+        </div>
+    </div>
 </body>
     <footer>
         <span>&copy; 2020 Lunac</span>
