@@ -1,0 +1,91 @@
+footer {
+    opacity: 0.5;
+    font-size: 15px;
+    width:100%;
+    color: #88a5b7;
+    text-align:center;
+    position:fixed;
+    bottom: 0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'M PLUS 1p', sans-serif;
+}
+
+body {
+    height: 100vh;
+    background-image: url("https://f.easyuploader.app/eu-prd/upload/20200919004119_3544536f6b4a44646b31.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation : animation-bg 3s linear infinite;
+    overflow: hidden;
+}
+
+@keyframes animation-bg {
+    10%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.03);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+.profile-card {
+    width: 600px;
+    text-align: center;
+    border-radius: 8px;
+    overflow: hidden;
+}
+.card-header {
+    background-color: transparent;
+    padding: 80px 40px;
+    border: 3px solid snow;
+}
+.icon {
+    display: inline-block;
+    padding: 3px;
+    margin: auto;
+    border-radius: 50%;
+    background: snow;
+}
+.icon img{
+    display: block;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+.icon img:hover{
+    width: 210px;
+    height: 210px;
+    transition: .3s ease-out;
+}
+.name {
+    color: #7079ba;
+    font-size: 60px;
+    font-weight: 600;
+    margin: 10px 0;
+}
+.desc {
+    color: dodgerblue;
+    font-size: 21px;
+    font-weight: 500;
+}
+.link a {
+    color: #7079ba;
+    width: 56px;
+    font-size: 32px;
+    transition: .3s linear;
+}
+.link a:hover {
+    color: dodgerblue;
+}
