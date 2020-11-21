@@ -25,7 +25,7 @@ html {
     margin: 30px;
 }
 .feat {
-    background-color: snow;
+    background-color: white;
     border-radius: 20px;
     margin: 10px;
     font-weight: bold;
@@ -127,4 +127,68 @@ footer {
     box-shadow: 0em -2.6em 0em 0em rgba(255, 255, 255, 0.2), 1.8em -1.8em 0 0em rgba(255, 255, 255, 0.2), 2.5em 0em 0 0em rgba(255, 255, 255, 0.2), 1.75em 1.75em 0 0em rgba(255, 255, 255, 0.2), 0em 2.5em 0 0em rgba(255, 255, 255, 0.2), -1.8em 1.8em 0 0em rgba(255, 255, 255, 0.5), -2.6em 0em 0 0em rgba(255, 255, 255, 0.7), -1.8em -1.8em 0 0em #ffffff;
   }
 }
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
+footer {
+    height: 80px;
+    font-size: 15px;
+    width: 100%;
+    color: black;
+    text-align:center;
+    align-items: center;
+    position:fixed;
+    bottom: 0;
+}
+
+.home {
+    justify-content: center;
+    display: flex;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(https://images6.alphacoders.com/823/823306.jpg);
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+}
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes animation-bg {
+    10%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.03);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+
+.home img{
+    height: 40vh;
+    animation : animation-bg 3s linear infinite;
+}
+
+.home h1 {
+    animation: fadeIn 3s ease 0.1s 1 normal;
+    color: rgb(222,56,74);
+    -webkit-text-stroke: 1px #FFF;
+    text-stroke: 1px #FFF;
+}
+
+.container2{
+    padding: 30px;
+    text-align: center;
+    margin: 30px;
+}

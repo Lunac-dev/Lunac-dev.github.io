@@ -24,36 +24,45 @@
     <link href="https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@300&display=swap" rel="stylesheet">
     <link rel="favicon" href="images/favicon.ico">
 </head>
+
 <body style="font-family: 'M PLUS 1p', sans-serif;">
-    <a name="page-top"></a>
-    <nav class="navbar navbar-expand-lg navbar-transparent bg-transparent fixed-top" id="mainNav">
-    <div class="container">
-      <a class="navbar-brand js-scroll-trigger" href="#page-top" style="color: rgb(222,56,74);">Gabriel!</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#feature" style="color: rgb(222,56,74);">特徴</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#support" style="color: rgb(222,56,74);">サポート</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#vote" style="color: rgb(222,56,74);">投票</a>
-          </li>
-        </ul>
-      </div>
+    <div id="loading">
+        <div class="spinner"></div>
     </div>
-  </nav>
-    <div class="home">
-        <h1 style="font-size: 10vh; font-style: italic;"><img src="images/logo.png"><br>Gabriel!<br>
-            <button type="button" class="btn btn-danger btn-lg">招待</button></h1>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Gabriel!</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="nav-item nav-link active" href="#"><i class="fas fa-home"></i> ホーム <span class="sr-only">(current)</span></a>
+                <a class="nav-item nav-link" href="http://to0.be/RHBXs0" target="_blank"><i class="far fa-plus-square"></i> 導入する</a>
+                <a class="nav-item nav-link" href="#feature"><i class="fas fa-rocket"></i> 特徴</a>
+                <a class="nav-item nav-link" href="https://lunac.gitbook.io/gabriel/" target="_blank"><i class="fas fa-terminal"></i> コマンド</a>
+                <a class="nav-item nav-link" href="https://discord.gg/veCPYGw" target="_blank"><i class="far fa-question-circle"></i> サポート</a>
+                <a class="nav-item nav-link" href="./index-en.html" target="_blank"><i class="fas fa-globe"></i> English</a>
+            </div>
+        </div>
+    </nav>
+    <div class="flex-item">
+        <img src="images/logo.png">
+        <div>
+            <h1 class="ariel" style="font-size:80px;"><span style="color: white;">Gabriel!</span></h1>
+            <div class="ariel" style="font-size:20px;"><span style="color: white;">モデレーション、管理コマンド、その他機能を備えた高品質な多機能bot!</span>
+            </div>
+            <br>
+            <a class="btn btn-danger btn-lg" href="https://discord.com/api/oauth2/authorize?client_id=682527744445382656&permissions=8&scope=bot" target="_blank" role="button"><i class="fas fa-link"></i> 導入する</a>
+            <br>
+            <br>
+            <br>
+            <br>
+        </div>
     </div>
-    <div class="container2">
+    <div style="background-color: darkgray; background-image: url(images/gabriel.png);  background-repeat: no-repeat; background-position: bottom right,left,right">
         <a name="feature"></a>
-        <h1 style="font-size: 50px; font-style: oblique;">[Feature]</h1>
+        <h1 style="text-align: center; color: snow; font-size: 60px;">Discord bot features</h1>
+        <h1 style="text-align: center; color: snow; font-size: 20px;">Discordbotに人気な機能とその他たくさんの機能を備えています。</h1>
         <div style="display: flex; flex-wrap: wrap; justify-content: center;">
             <div class="feat">
                 <h1 style="padding: 10px; color: rgb(222,56,74);"><i class="fas fa-hammer fa-4x"></i></h1>
@@ -115,12 +124,11 @@
             </div>
         </div>
     </div>
-    <div class="container2">
-        <a name="support"></a>
-        <h1 style="font-size: 50px; font-style: oblique;">[Interested?]</h1>
+    <div style="text-align: center; background-color: gainsboro; padding: 30px;">
+        <h1 style="text-align: center; color: snow; font-size: 60px; text-shadow: 4px 6px 6px #808080;">興味がある？</h1>
         <div style="display: flex; flex-wrap: wrap; justify-content: center;">
             <div style="width: 30%; margin: 30px;">
-                <h3 style="color: rgb(222,56,74);">質問やこのボットがどのようなものか試したい場合はDiscordサーバーに入ることをおすすめします！<br>意見やバグ報告も受け付けています。</h3>
+                <h3 style="color: rgb(222,56,74);">質問があるか、導入する前に天使を試したい場合はサポートサーバーに参加してください！</h3>
                 <a class="btn btn-danger btn-lg" href="https://discord.com/api/oauth2/authorize?client_id=682527744445382656&permissions=8&scope=bot" target="_blank" role="button" style="margin: 30px;"><i class="fas fa-plus-square"></i> 導入する</a>
                 <a class="btn btn-danger btn-lg" href="https://discord.gg/veCPYGw" target="_blank" role="button"><i class="fab fa-discord"></i> サポート</a>
             </div>
@@ -129,18 +137,17 @@
             </div>
         </div>
     </div>
-    <div class="container2">
-        <a name="vote"></a>
-        <h1 style="font-size: 50px; font-style: oblique;">[Vote]</h1>
-        <h1 style="font-size: 60px; margin: 30px;">BOT LISTS</h1>
+    <div style="text-align: center; background-image: url(https://images3.alphacoders.com/869/thumb-1920-869812.jpg); background-size: cover; background-repeat: no-repeat; padding: 100px;">
+        <h1 style="text-align: center; color: snow; font-size: 60px; text-shadow: 4px 6px 6px #808080; margin: 30px;">BOT LIST</h1>
         <a class="btn btn-danger btn-lg" href="https://top.gg/bot/682527744445382656" target="_blank" role="button" style="margin: 20px;"><i class="fab fa-discord"></i> TOP.GG</a>
         <a class="btn btn-danger btn-lg" href="https://discord.bots.gg/bots/682527744445382656" target="_blank" role="button"><i class="fab fa-discord"></i> DISCORD.BOTS.GG</a>
     </div>
+    <div style="text-align: center; background-color: #808080; padding: 50px;">
+        <h1 style="text-align: center; color: snow; font-size: 60px;">もっと知りたい！</h1>
+        <a class="btn btn-danger btn-lg" href="commands.html" target="_blank" role="button"><i class="fas fa-terminal"></i> コマンドを見る (準備中)</a>
+    </div>
 </body>
-<footer>
     <footer>
-        <span><br>&copy; 2020 Gabriel! Discord Bot <i class="fab fa-discord"></i></span>
-        <span><br>This site is not affiliated with <a href="http://gabdro.com/">Gabriel dropout.</a></span>
+        <span>&copy; 2020 Lunac</span>
     </footer>
-</footer>
 </html>
