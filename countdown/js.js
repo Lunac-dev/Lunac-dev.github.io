@@ -1,64 +1,141 @@
-function CountdownTimer(elm, tl, mes) {
-  this.initialize.apply(this, arguments);
-}
-CountdownTimer.prototype = {
-  initialize: function (elm, tl, mes) {
-    this.elem = document.getElementById(elm);
-    this.tl = tl;
-    this.mes = mes;
-  },
-  countDown: function () {
-    var timer = '';
-    var today = new Date();
-    var day = Math.floor((this.tl - today) / (24 * 60 * 60 * 1000));
-    var hour = Math.floor((day * 24) + ((this.tl - today) % (24 * 60 * 60 * 1000)) / (60 * 60 * 1000));
-    var min = Math.floor(((this.tl - today) % (24 * 60 * 60 * 1000)) / (60 * 1000)) % 60;
-    var sec = Math.floor(((this.tl - today) % (24 * 60 * 60 * 1000)) / 1000) % 60 % 60;
-    var milli = Math.floor(((this.tl - today) % (24 * 60 * 60 * 1000)) / 10) % 100;
-    var me = this;
+// Create Countdown
+var Countdown = {
+  
+  // Backbone-like structure
+  $el: $('.countdown'),
+  
+  // Params
+  countdown_interval: null,
+  total_seconds     : 0,
+  
+  // Initialize the countdown  
+  init: function() {
+    
+    // DOM
+		this.$ = {
+    	hours  : this.$el.find('.bloc-time.hours .figure'),
+    	minutes: this.$el.find('.bloc-time.min .figure'),
+    	seconds: this.$el.find('.bloc-time.sec .figure')
+   	};
 
-    if ((this.tl - today) > 0) {
-      if (hour) timer += '<span class="cdt_num">' + hour + '</span><small>時間</small>';
-      timer += '<span class="cdt_num">' + this.addZero(min) + '</span><small>分</small><span class="cdt_num">' + this.addZero(sec) + '</span><small>秒</small><span class="cdt_num milli">' + this.addZero(milli) + '</span>';
-      this.elem.innerHTML = timer;
-      tid = setTimeout(function () {
-        me.countDown();
-      }, 10);
-    } else {
-      this.elem.innerHTML = this.mes;
-      return;
+    // Init countdown values
+    this.values = {
+	      hours  : this.$.hours.parent().attr('data-init-value'),
+        minutes: this.$.minutes.parent().attr('data-init-value'),
+        seconds: this.$.seconds.parent().attr('data-init-value'),
+    };
+    
+    // Initialize total seconds
+    this.total_seconds = this.values.hours * 60 * 60 + (this.values.minutes * 60) + this.values.seconds;
+
+    // Animate countdown to the end 
+    this.count();    
+  },
+  
+  count: function() {
+    
+    var that    = this,
+        $hour_1 = this.$.hours.eq(0),
+        $hour_2 = this.$.hours.eq(1),
+        $min_1  = this.$.minutes.eq(0),
+        $min_2  = this.$.minutes.eq(1),
+        $sec_1  = this.$.seconds.eq(0),
+        $sec_2  = this.$.seconds.eq(1);
+    
+        this.countdown_interval = setInterval(function() {
+
+        if(that.total_seconds > 0) {
+
+            --that.values.seconds;              
+
+            if(that.values.minutes >= 0 && that.values.seconds < 0) {
+
+                that.values.seconds = 59;
+                --that.values.minutes;
+            }
+
+            if(that.values.hours >= 0 && that.values.minutes < 0) {
+
+                that.values.minutes = 59;
+                --that.values.hours;
+            }
+
+            // Update DOM values
+            // Hours
+            that.checkHour(that.values.hours, $hour_1, $hour_2);
+
+            // Minutes
+            that.checkHour(that.values.minutes, $min_1, $min_2);
+
+            // Seconds
+            that.checkHour(that.values.seconds, $sec_1, $sec_2);
+
+            --that.total_seconds;
+        }
+        else {
+            clearInterval(that.countdown_interval);
+        }
+    }, 1000);    
+  },
+  
+  animateFigure: function($el, value) {
+    
+     var that         = this,
+		     $top         = $el.find('.top'),
+         $bottom      = $el.find('.bottom'),
+         $back_top    = $el.find('.top-back'),
+         $back_bottom = $el.find('.bottom-back');
+
+    // Before we begin, change the back value
+    $back_top.find('span').html(value);
+
+    // Also change the back bottom value
+    $back_bottom.find('span').html(value);
+
+    // Then animate
+    TweenMax.to($top, 0.8, {
+        rotationX           : '-180deg',
+        transformPerspective: 300,
+	      ease                : Quart.easeOut,
+        onComplete          : function() {
+
+            $top.html(value);
+
+            $bottom.html(value);
+
+            TweenMax.set($top, { rotationX: 0 });
+        }
+    });
+
+    TweenMax.to($back_top, 0.8, { 
+        rotationX           : 0,
+        transformPerspective: 300,
+	      ease                : Quart.easeOut, 
+        clearProps          : 'all' 
+    });    
+  },
+  
+  checkHour: function(value, $el_1, $el_2) {
+    
+    var val_1       = value.toString().charAt(0),
+        val_2       = value.toString().charAt(1),
+        fig_1_value = $el_1.find('.top').html(),
+        fig_2_value = $el_2.find('.top').html();
+
+    if(value >= 10) {
+
+        // Animate only if the figure has changed
+        if(fig_1_value !== val_1) this.animateFigure($el_1, val_1);
+        if(fig_2_value !== val_2) this.animateFigure($el_2, val_2);
     }
-  },
-  addZero: function (num) {
-    return ('0' + num).slice(-2);
+    else {
+
+        // If we are under 10, replace first figure with 0
+        if(fig_1_value !== '0') this.animateFigure($el_1, 0);
+        if(fig_2_value !== val_1) this.animateFigure($el_2, val_1);
+    }    
   }
-}
+};
 
-function CDT() {
-  var myD = Date.now();
-  var start = new Date('2020-12-15T00:00+09:00'); // 開始日時の指定
-  var myS = start.getTime();
-  var end = new Date('2020-12-27T15:00+09:00'); // 終了日時の指定
-  var myE = end.getTime();
-
-  // 今日が開始日前か期間中か終了日後かの判別
-  if (myS <= myD && myE >= myD) {
-    var text = '<span>終了</span><span>まで</span>';
-    var tl = end;
-  } // 期間中
-  else if (myS > myD) {
-    var text = '<span>開始</span><span>まで</span>';
-    var tl = start;
-  } // 開始日前
-  else {
-    var text = "";
-  } // 終了日後
-
-  var timer = new CountdownTimer('cdt_date', tl, '終了しました</small>'); // 終了日後のテキスト
-  timer.countDown();
-  target = document.getElementById("cdt_txt");
-  target.innerHTML = text;
-}
-window.onload = function () {
-  CDT();
-}
+// Let's go !
+Countdown.init();
