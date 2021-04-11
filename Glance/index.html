@@ -1,0 +1,134 @@
+
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:site_name" content="Glance Network"/>
+    <meta property="og:title" content="Glance Network"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:url" content="https://glance.top/"/>
+    <meta property="og:image" content="https://glance.top/images/glance.png"/>
+    <meta property="og:description" content="Minecraft PvP Server">
+    <meta name="twitter:site" content="https://glance.top/">
+    <meta name="twitter:image" content="https://glance.top/images/glance.png">
+    <script type="text/javascript" src="js/js.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/leonardosnt/mc-player-counter/dist/mc-player-counter.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous"><script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+    <title>Glance Network Demo</title>
+    <link id="theme-style" rel="stylesheet" href="css/main.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!--NavBar-->
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+            <a class="navbar-brand">Glance Network</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" style="color: white;">
+              <span class="navbar-toggler-icon" style="color: white;"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav me-auto">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#practice">Practice</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#mlgrush">MLGRush</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#souppvp">SoupPvP</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#uhc">UHC</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link">Store</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link">LeaderBoard</a>
+                </li>
+              </ul>
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                      <a class="nav-link" aria-current="page" href="http://discord.glance.top/"><button type="button" class="btn btn-light btn-lg text-white" style="background-color: #7289da;">Discord</button></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <section class="container-title">
+        <audio src="images/glancebg.mp3" autoplay loop>
+          <p>音声の再生に対応してないため再生できません。</p>
+        </audio>
+        <video playsinline autoplay muted loop>
+            <source src="images/glancebg.mp4" type="video/mp4">
+        </video>
+        <h1 style="font-size: 10vh; border-bottom: solid 3px white;">Glance Network</h1>
+        <h1 class="text-info">Season 3 Available! Join now glance.top</h1>
+        <input type="text" value="glance.top" id="ipInput" hidden>
+        <button class="btn btn-light" onclick="copy()"><span data-playercounter-ip="glance.top">0</span> players are online!</button>
+    </section>
+    <h4 class="title" id="about"><span class="title-span">About</span></h4>
+    <section class="cards">
+        <div>
+            <h1 style="font-size: 8vh;">Why us?</h1>
+            <h1>Glance Network is a Practice-based server that started around July 2019. Currently, there are Practice, SoupPvP, MLGRush, and UHC game modes, and we are also holding events. If you like minigames and PvP then try joining us and see if you like it or not.</h1>
+        </div>
+        <div>
+            <img src="images/glance.png">
+        </div>
+    </section>
+    <h4 class="title" id="practice"><span class="title-span">Practice</span></h4>
+    <section class="cards">
+        <div>
+            <img src="images/practice.png">
+        </div>
+        <div style="margin: 10px;">
+            <h3>One of our biggest gamemode in the server, Practice. It has a wide selection of HCF Kits to choose from, including Duel and even kits for mini-games such as SkyWars. We also have occasional tournaments with prizes.</h3>
+        </div>
+    </section>
+    <h4 class="title" id="mlgrush"><span class="title-span">MLGRush</span></h4>
+    <section class="cards">
+        <div style="margin: 10px;">
+            <h3>MLGRush was created for players who can't play happily due to EU server latency; it has KBs such as SpieleOase and AntiAC, and uses the same maps.</h3>
+        </div>
+        <div>
+            <img src="images/mlgrush.png">
+        </div>
+    </section>
+    <h4 class="title" id="souppvp"><span class="title-span">SoupPvP</span></h4>
+    <section class="cards">
+        <div>
+            <img src="images/souppvp.png">
+        </div>
+        <div style="margin: 10px;">
+            <h3>There are many kits to fight with in SoupPvP. It's a lot of fun to play around with tactics and make the most of kit. There is also a ranking system available at <a href="https://soup.glance.top/">https://soup.glance.top/</a></h3>
+        </div>
+    </section>
+    <h4 class="title" id="uhc"><span class="title-span">UHC</span></h4>
+    <section class="cards">
+        <div style="margin: 10px;">
+            <h3>In Ultra-Hardcore, players cannot regenerate health from food and must use potions, suspicious stews or golden apples to regain lost health. While a UHC play through could theoretically last indefinitely, the primary goal is defeat all of the other players. Glance Network has over 70 scenarios to choose from, and to keep you from getting bored.</h3>
+        </div>
+        <div>
+            <img src="images/uhc.jpg">
+        </div>
+    </section>
+    <section class="join">
+        <h1 style="font-size: 10vh;">JOIN NOW!</h1>
+        <h1 class="text-info">GLANCE.TOP</h1>
+    </section>
+</body>
+<footer>
+    <footer>
+        <span><br>&copy; 2021 Glance Network / Created by <a href="https://Lunac.xyz">Lunac.xyz</a></span>
+    </footer>
+</footer>
+</html>
