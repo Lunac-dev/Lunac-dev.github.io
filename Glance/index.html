@@ -64,16 +64,14 @@
         </div>
     </nav>
     <section class="container-title">
-        <audio src="images/glancebg.mp3" autoplay loop>
-          <p>音声の再生に対応してないため再生できません。</p>
-        </audio>
-        <video playsinline autoplay muted loop>
+        <video id="video" loop>
             <source src="images/glancebg.mp4" type="video/mp4">
         </video>
         <h1 style="font-size: 10vh; border-bottom: solid 3px white;">Glance Network</h1>
         <h1 class="text-info">Season 3 Available! Join now glance.top</h1>
         <input type="text" value="glance.top" id="ipInput" hidden>
         <button class="btn btn-light" onclick="copy()"><span data-playercounter-ip="glance.top">0</span> players are online!</button>
+        <button class="btn btn-light" onclick="play()" id="play">BACKGROUND PLAY</button>
     </section>
     <h4 class="title" id="about"><span class="title-span">About</span></h4>
     <section class="cards">
