@@ -1,9 +1,13 @@
-function copy() {
-    var copyText = document.getElementById("ipInput");
-    copyText.select();
-    copyText.setSelectionRange(0, 99999);
-    document.execCommand("copy");
-    alert("Copied the ip!");
+function onClickCopy() {
+    let pTag = document.getElementById('copyTarget');
+    let range = document.createRange();
+    range.selectNodeContents(pTag);
+    let selection = window.getSelection();
+    selection.removeAllRanges();
+    selection.addRange(range);
+    document.execCommand('copy');
+    selection.removeAllRanges();
+    alert("IP Copied!")
 }
 
 function play() {
