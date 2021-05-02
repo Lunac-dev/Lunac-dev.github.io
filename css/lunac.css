@@ -34,7 +34,7 @@
     bottom:0px;
 }
 
-.top h2 {
+.top h3 {
     color: black;
     position: absolute;
     left: 50%;
@@ -104,6 +104,9 @@
   62%{
     transform: translate(-22px,5px) skew(21deg); 
   }
+}
+.container {
+  text-align: center;
 }
 /*FOOTER*/
 footer {
