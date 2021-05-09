@@ -3,7 +3,27 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script type="text/javascript" src="js/js.js"></script>
+    <!-- HTML Meta Tags -->
+    <title>[LUNAC.XYZ - ABOUT LUNAC]</title>
+    <meta name="description" content="Lunacについての自己紹介ページです。">
+
+    <!-- Google / Search Engine Tags -->
+    <meta itemprop="name" content="[LUNAC.XYZ - ABOUT LUNAC]">
+    <meta itemprop="description" content="Lunacについての自己紹介ページです。">
+    <meta itemprop="image" content="">
+
+    <!-- Facebook Meta Tags -->
+    <meta property="og:url" content="https://lunac.xyz">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="[LUNAC.XYZ - ABOUT LUNAC]">
+    <meta property="og:description" content="Lunacについての自己紹介ページです。">
+    <meta property="og:image" content="">
+
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="[LUNAC.XYZ - ABOUT LUNAC]">
+    <meta name="twitter:description" content="Lunacについての自己紹介ページです。">
+    <meta name="twitter:image" content="">
     <!-- Font Awesome -->
     <link
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
@@ -24,11 +44,15 @@
     type="text/javascript"
     src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.3.0/mdb.min.js"
     ></script>
-    <title>About Lunac</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css">
     <link id="theme-style" rel="stylesheet" href="css/lunac.css">
 </head>
 
 <body>
+    <div id="splash">
+    <div id="splash_text"><p>読込中...!</p></div>
+    <!--/splash--></div>
+    <div id="particles-js"></div>
     <div class="home">
         <nav class="navbar navbar-expand-lg navbar-light">
             <div class="container-fluid">
@@ -45,10 +69,10 @@
                 <i class="fas fa-bars"></i>
               </button>
               <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div class="navbar-nav">
+                <!-- <div class="navbar-nav">
                   <a class="nav-link text-white" href="./"><i class="fas fa-home"></i> Home</a>
                   <a class="nav-link text-white" href="./plugins.html"><i class="far fa-file"></i> Plugins</a>
-                </div>
+                </div> -->
                 <div class="navbar-nav ms-auto">
                   <a class="nav-link text-white" href="https://twitter.com/lunac_dev"><i class="fab fa-twitter"></i> Twitter</a>
                   <a class="nav-link text-white" href="https://discord.gg/4zrQDW9PNq"><i class="fab fa-discord"></i> Discord</a>
@@ -57,13 +81,12 @@
             </div>
         </nav>
         <section class="top-block">
-            <img src="https://cdn.discordapp.com/attachments/711968635970912316/838440068473290772/8ZRfIIV5k4rxsMA1619970017_1619970080.png">
-            <h1>LUNAC.XYZ</h1>
-            <h3>PHP / SPIGOT / NOHIT.CC / JAVA</h3>
+            <h1 class="animate__animated animate__fadeInUp animate__delay-1s">LUNAC</h1>
+            <h3 class="animate__animated animate__fadeInUp animate__delay-2s">PHP / SPIGOT / NOHIT.CC / JAVA / WebDesign</h3>
         </section>
-    </div>
+    <!--/home--></div>
     <section class="container">
-        <h2>プロジェクト</h2>
+        <h2 class="lightSpeedInLeftTrigger"><span>P</span>rojects</h2>
         <div class="row">
             <div class="col-md-12 mb-4">
               <div class="card card-image" style="background-image: url(https://cdn.discordapp.com/attachments/711968635970912316/838378937775685652/BZkKzWj.png);">
@@ -119,26 +142,61 @@
                   </div>
                 </div>
             </div>
-            <div class="col-md-12 mb-4">
-              <div class="card card-image" style="background-image: url(https://b.cdnst.net/images/share-logo.png); background-repeat: no-repeat; background-size: cover;">
-                <div class="text-white text-center d-flex rgba-black-strong py-5 px-4 rounded" style="justify-content: center;">
-                  <div>
-                    <h6 class="purple-text text-danger">
-                      <i class="fas fa-shield-alt"></i>
-                      <strong> Service</strong>
-                    </h6>
-                    <h3 class="py-3 font-weight-bold text-white">
-                      <strong>Speedtest</strong>
-                    </h3>
-                    <p class="pb-3 text-white">Tokyoにあるサーバーを使用してSpeedtestサーバーを立てました。
-                    </p>
-                    <a class="btn btn-secondary btn-rounded btn-md" href="https://www.speedtest.net/server/41780"><i class="fas fa-clone left"></i> プロジェクトを見る</a>
-                  </div>
+        </div>
+        <h2 class="lightSpeedInLeftTrigger"><span>P</span>lugins</h2>
+        <div class="row">
+          <div class="col-md-12 mb-4">
+            <div class="card card-image" style="background-image: url(https://proxy.spigotmc.org/1315dd5d3ce86bb87b5a5b13f29a93c82e226ddb?url=https%3A%2F%2Fcdn.discordapp.com%2Fattachments%2F711968635970912316%2F780732259115859988%2Funknown.png); background-repeat: no-repeat; background-size: cover;">
+              <div class="text-white text-center d-flex rgba-black-strong py-5 px-4 rounded" style="justify-content: center;">
+                <div>
+                  <h6 class="purple-text text-success">
+                    <i class="fas fa-cubes"></i>
+                    <strong> Spigot</strong>
+                  </h6>
+                  <h3 class="py-3 font-weight-bold">
+                    <strong>ReportEx</strong>
+                  </h3>
+                  <p class="pb-3">Discord WebhookやMySQLに対応したシンプルで使いやすいプラグインです。600ダウンロード数突破！
+                  </p>
+                  <a class="btn btn-secondary btn-rounded btn-md" href="https://www.spigotmc.org/resources/%E6%9C%88-reportex-discord-webhook-gui-list-optimized-design-mysql-1-8-1-16-x.86000/"><i class="fas fa-clone left"></i> プロジェクトを見る</a>
                 </div>
               </div>
+            </div>
+          </div>
+          <div class="col-md-12 mb-4">
+            <div class="card card-image" style="background-image: url(https://proxy.spigotmc.org/83d3cf0999e1817166bc2baa2a253cb80223e2f3?url=https%3A%2F%2Fcdn.discordapp.com%2Fattachments%2F711968635970912316%2F790059224330928188%2Funknown.png); background-repeat: no-repeat; background-size: cover;">
+              <div class="text-white text-center d-flex rgba-black-strong py-5 px-4 rounded" style="justify-content: center;">
+                <div>
+                  <h6 class="purple-text text-success">
+                    <i class="fas fa-cubes"></i>
+                    <strong> Spigot</strong>
+                  </h6>
+                  <h3 class="py-3 font-weight-bold">
+                    <strong>AnnounceEx</strong>
+                  </h3>
+                  <p class="pb-3">Discord Webhookに対応したアナウンスプラグインです。履歴でファイルに保存することもできます。
+                  </p>
+                  <a class="btn btn-secondary btn-rounded btn-md" href="https://www.spigotmc.org/resources/%E6%9C%88-reportex-discord-webhook-gui-list-optimized-design-mysql-1-8-1-16-x.86000/"><i class="fas fa-clone left"></i> プロジェクトを見る</a>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
+        <h2 class="lightSpeedInLeftTrigger"><span>C</span>ontact</h2>
+        <div class="contact">
+          <h3>Discord: Check at menubar</h3>
+          <h3>Twitter: @lunac_dev</h3>
+        </div>
     </section>
+    <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/protonet-jquery.inview/1.1.2/jquery.inview.min.js"></script>
+    <script src="https://rawgit.com/kimmobrunfeldt/progressbar.js/master/dist/progressbar.min.js"></script>
+    <!--IE11用-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.26.0/babel.min.js"></script><!--不必要なら削除-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-polyfill/6.26.0/polyfill.min.js"></script><!--不必要なら削除-->
+    <script src="js/js.js"></script>
+    <script src="js/trigger.js"></script>
 </body>
 <footer>
     <footer>
