@@ -1,146 +1,132 @@
 <html lang="ja">
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="モデレーション、管理コマンド、その他機能を備えた高品質な多機能bot！"/>
-    <meta name="theme-color" content="#de384a"/>
-    <meta property="og:site_name" content="Gabriel! | Discord bot"/>
-    <meta property="og:title" content="Gabriel! | Discord bot"/>
-    <meta property="og:type" content="website"/>
-    <meta property="og:url" content="https://lunac-dev.github.io/gabriel/"/>
-    <meta property="og:image" content="https://lunac-dev.github.io/gabriel/images/logo.png"/>
-    <meta property="og:description" content="モデレーション、管理コマンド、その他機能を備えた高品質な多機能bot！">
-    <meta name="twitter:site" content="https://lunac-dev.github.io/gabriel/">
-    <meta name="twitter:image" content="https://lunac-dev.github.io/gabriel/images/logo.png">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
-    <script src="https://kit.fontawesome.com/7d0daff94e.js" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="js/js.js"></script>
-    <title>Gabriel! | Discord bot</title>
-    <link id="theme-style" rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@300&display=swap" rel="stylesheet">
-    <link rel="favicon" href="images/favicon.ico">
-</head>
-<body style="font-family: 'M PLUS 1p', sans-serif;">
-    <a name="page-top"></a>
-    <nav class="navbar navbar-expand-lg navbar-transparent bg-transparent fixed-top" id="mainNav">
-    <div class="container">
-      <a class="navbar-brand js-scroll-trigger" href="#page-top" style="color: rgb(222,56,74);">Gabriel!</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#feature" style="color: rgb(222,56,74);">特徴</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#support" style="color: rgb(222,56,74);">サポート</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#vote" style="color: rgb(222,56,74);">投票</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-    <div class="home">
-        <h1 style="font-size: 10vh; font-style: italic;"><img src="images/logo.png"><br>Gabriel!<br>
-            <button type="button" class="btn btn-danger btn-lg">招待</button></h1>
-    </div>
-    <div class="container2">
-        <a name="feature"></a>
-        <h1 style="font-size: 50px; font-style: oblique;">[Feature]</h1>
-        <div style="display: flex; flex-wrap: wrap; justify-content: center;">
-            <div class="feat">
-                <h1 style="padding: 10px; color: rgb(222,56,74);"><i class="fas fa-hammer fa-4x"></i></h1>
-                <div style="display: block">
-                    <h2 style="color: rgb(222,56,74);">Moderation</h2>
-                    <h8 style="color: rgb(222,56,74);">サーバーの管理や、禁止する言葉の設定を簡単に行なえます。</h8>
-                </div>
-            </div>
-            <div class="feat">
-                <h1 style="padding: 10px; color: rgb(222,56,74);"><i class="fas fa-shield-alt fa-4x"></i></h1>
-                <div style="display: block">
-                    <h2 style="color: rgb(222,56,74);">GlobalBan</h2>
-                    <h8 style="color: rgb(222,56,74);">このボットが導入されているサーバーで安全が続きます。</h8>
-                </div>
-            </div>
-            <div class="feat">
-                <h1 style="padding: 10px; color: rgb(222,56,74);"><i class="fas fa-comment-dots fa-4x"></i></h1>
-                <div style="display: block">
-                    <h2 style="color: rgb(222,56,74);">GlobalChat</h2>
-                    <h8 style="color: rgb(222,56,74);">このボットが導入されているサーバーの全員が見ることができるチャットです。過疎化対策にもなります。<br>荒らし等を防ぐ機能が備わっているので安全です。</h8>
-                </div>
-            </div>
-            <div class="feat">
-                <h1 style="padding: 10px; color: rgb(222,56,74);"><i class="fas fa-gamepad fa-4x"></i></h1>
-                <div style="display: block">
-                    <h2 style="color: rgb(222,56,74);">Game</h2>
-                    <h8 style="color: rgb(222,56,74);">Minecraft・Apex Legendsのコマンド<br>スキンの取得やサーバーの状況を見れます。</h8>
-                </div>
-            </div>
+    <head>
+        <!-- Primary Meta Tags -->
+        <title>Gabriel! | The great angel discord bot!</title>
+        <meta name="title" content="Gabriel! | The great angel discord bot!">
+        <meta name="description" content="We'll turn Discord into something more useful and fun than it already is! Invite this angel to your group now!">
+
+        <!-- Open Graph / Facebook -->
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="https://lunac.xyz/gabriel/">
+        <meta property="og:title" content="Gabriel! | The great angel discord bot!">
+        <meta property="og:description" content="We'll turn Discord into something more useful and fun than it already is! Invite this angel to your group now!">
+        <meta property="og:image" content="https://lunac.xyz/gabriel/images/icon.png">
+
+        <!-- Twitter -->
+        <meta property="twitter:card" content="summary_large_image">
+        <meta property="twitter:url" content="https://lunac.xyz/gabriel/">
+        <meta property="twitter:title" content="Gabriel! | The great angel discord bot!">
+        <meta property="twitter:description" content="We'll turn Discord into something more useful and fun than it already is! Invite this angel to your group now!">
+        <meta property="twitter:image" content="https://lunac.xyz/gabriel/images/icon.png">
+        <!-- Font Awesome -->
+        <link
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+        rel="stylesheet"
+        />
+        <!-- Google Fonts -->
+        <link
+        href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+        rel="stylesheet"
+        />
+        <!-- MDB -->
+        <link
+        href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.3.0/mdb.min.css"
+        rel="stylesheet"
+        />
+        <!-- MDB -->
+        <script
+        type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.3.0/mdb.min.js"
+        ></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css">
+        <link id="theme-style" rel="stylesheet" href="css/main.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div id="splash">
+        <div id="splash_text"><p>LOADING...</p></div>
         </div>
-        <div style="display: flex; flex-wrap: wrap; justify-content: center;">
-            <div class="feat">
-                <h1 style="padding: 10px; color: rgb(222,56,74);"><i class="fas fa-images fa-4x"></i></h1>
-                <div style="display: block">
-                    <h2 style="color: rgb(222,56,74);">Image</h2>
-                    <h8 style="color: rgb(222,56,74);">ランダムでえっちな画像等を表示します。猫耳、ランダム、ポケモン、ホロライブ等</h8>
+        <div id="particles-js"></div>
+        <div class="top">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <div class="container-fluid">
+                  <a class="navbar-brand text-white">Gabriel!</a>
+                  <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-mdb-toggle="collapse"
+                    data-mdb-target="#navbarNavAltMarkup"
+                    aria-controls="navbarNavAltMarkup"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+                  >
+                    <i class="fas fa-bars"></i>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                      <a class="nav-link text-white" >Commands(Soon)</a>
+                      <a href="https://top.gg/bot/682527744445382656" class="nav-link text-white" >Vote</a>
+                    </div>
+                    <div class="navbar-nav ms-auto">
+                      <a href="https://discord.com/api/oauth2/authorize?client_id=682527744445382656&permissions=8&scope=bot"><button type="button" class="btn btn-primary btn-rounded" style="background-color: #7289da;"><i class="far fa-plus-square"></i> Invite</button></a>
+                    </div>
+                  </div>
                 </div>
-            </div>
-            <div class="feat">
-                <h1 style="padding: 10px; color: rgb(222,56,74);"><i class="fas fa-rocket fa-4x"></i></h1>
-                <div style="display: block">
-                    <h2 style="color: rgb(222,56,74);">Uptime</h2>
-                    <h8 style="color: rgb(222,56,74);">ボットがオフラインになることはほぼありません。メンテナンスをする際はお知らせをします。</h8>
+              </nav>
+              <section class="top-box">
+                <div class="discord">
+                  <img src="./images/icon.png">
+                  <iframe src="https://discord.com/widget?id=781946764168658984&theme=dark" width="300" height="400" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts" style="margin: 10px;"></iframe>
                 </div>
-            </div>
-            <div class="feat">
-                <h1 style="padding: 10px; color: rgb(222,56,74);"><i class="fas fa-external-link-alt fa-4x"></i></h1>
-                <div style="display: block">
-                    <h2 style="color: rgb(222,56,74);">Link</h2>
-                    <h8 style="color: rgb(222,56,74);">メッセージリンクの引用を自動で行います。</h8>
+                <div>
+                  <h1 class="animate__animated animate__fadeInUp animate__delay-1s">Gabriel!</h1>
+                  <h2 class="animate__animated animate__fadeInUp animate__delay-1s">The greatest angel of all time.</h2>
+                  <h2 class="animate__animated animate__fadeInUp animate__delay-1s">Many functions from NSFW to moderation.</h2>
+                  <a href="https://discord.com/api/oauth2/authorize?client_id=682527744445382656&permissions=8&scope=bot" class="animate__animated animate__fadeInUp animate__delay-2s"><button type="button" class="btn btn-light btn-rounded">Invite <i class="fas fa-chevron-right"></i></button></a>
                 </div>
-            </div>
-            <div class="feat">
-                <h1 style="padding: 10px; color: rgb(222,56,74);"><i class="fas fa-language fa-4x"></i></h1>
-                <div style="display: block">
-                    <h2 style="color: rgb(222,56,74);">翻訳</h2>
-                    <h8 style="color: rgb(222,56,74);">コマンド1つで簡単に翻訳します。</h8>
+              </section>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#f3f4f5" fill-opacity="1" d="M0,64L48,80C96,96,192,128,288,138.7C384,149,480,139,576,128C672,117,768,107,864,133.3C960,160,1056,224,1152,224C1248,224,1344,160,1392,128L1440,96L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
+              <section class="feature">
+                <h1>Why choose Gabriel?</h1>
+                <dev class="feature-box">
+                  <div>
+                    <h2><i class="fas fa-cog text-primary"></i> <strong>Moderation</strong></h2>
+                    <h3>This includes features such as banishment, banning, channel settings, global banning, and word filtering.</h3>
+                  </div>
+                </dev>
+                <dev class="feature-box">
+                  <div>
+                    <h2><i class="fas fa-star text-primary"></i> <strong>NSFW Contents</strong> <span class="badge bg-secondary">Popular!</span></h2>
+                    <h3>NSFW image generator for <strong>Hololive</strong>, Genshin, Azur Lane, hentai, yandere, etc.</h3>
+                  </div>
+                </dev>
+                <dev class="feature-box">
+                  <div>
+                    <h2><i class="fas fa-external-link-alt text-primary"></i> <strong>Auto Link</strong></h2>
+                    <h3>Automatically quote the message link. Support for embed and message</h3>
+                  </div>
+                </dev>
+              </section>
+              <section class="get">
+                <div style="background-color: beige; margin: 10px; border-radius: 20px;">
+                  <h1>Get started with Gabriel!</h1>
+                  <a href="https://discord.com/api/oauth2/authorize?client_id=682527744445382656&permissions=8&scope=bot"><button type="button" class="btn btn-primary btn-lg"><i class="fab fa-discord"></i> Invite Gabriel!</button></a>
                 </div>
-            </div>
+              </section>
         </div>
-    </div>
-    <div class="container2">
-        <a name="support"></a>
-        <h1 style="font-size: 50px; font-style: oblique;">[Interested?]</h1>
-        <div style="display: flex; flex-wrap: wrap; justify-content: center;">
-            <div style="width: 30%; margin: 30px;">
-                <h3 style="color: rgb(222,56,74);">質問やこのボットがどのようなものか試したい場合はDiscordサーバーに入ることをおすすめします！<br>意見やバグ報告も受け付けています。</h3>
-                <a class="btn btn-danger btn-lg" href="https://discord.com/api/oauth2/authorize?client_id=682527744445382656&permissions=8&scope=bot" target="_blank" role="button" style="margin: 30px;"><i class="fas fa-plus-square"></i> 導入する</a>
-                <a class="btn btn-danger btn-lg" href="https://discord.gg/veCPYGw" target="_blank" role="button"><i class="fab fa-discord"></i> サポート</a>
-            </div>
-            <div>
-                <iframe src="https://discordapp.com/widget?id=716661225810821180&theme=dark" width="350" height="400" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
-            </div>
-        </div>
-    </div>
-    <div class="container2">
-        <a name="vote"></a>
-        <h1 style="font-size: 50px; font-style: oblique;">[Vote]</h1>
-        <h1 style="font-size: 60px; margin: 30px;">BOT LISTS</h1>
-        <a class="btn btn-danger btn-lg" href="https://top.gg/bot/682527744445382656" target="_blank" role="button" style="margin: 20px;"><i class="fab fa-discord"></i> TOP.GG</a>
-        <a class="btn btn-danger btn-lg" href="https://discord.bots.gg/bots/682527744445382656" target="_blank" role="button"><i class="fab fa-discord"></i> DISCORD.BOTS.GG</a>
-    </div>
-</body>
-<footer>
+        <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/protonet-jquery.inview/1.1.2/jquery.inview.min.js"></script>
+        <script src="https://rawgit.com/kimmobrunfeldt/progressbar.js/master/dist/progressbar.min.js"></script>
+        <!--IE11用-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.26.0/babel.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-polyfill/6.26.0/polyfill.min.js"></script>
+        <script src="js/main.js"></script>
+    </body>
     <footer>
-        <span><br>&copy; 2020 Gabriel! Discord Bot <i class="fab fa-discord"></i></span>
-        <span><br>This site is not affiliated with <a href="http://gabdro.com/">Gabriel dropout.</a></span>
+      <footer>
+          <span><br>&copy; 2020 - 2021 Gabriel! / Created by <a href="https://Lunac.xyz">Lunac.xyz</a></span>
+      </footer>
     </footer>
-</footer>
 </html>
